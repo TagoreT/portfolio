@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <!-- <link rel="icon" type="image/svg+xml" href="/logo.svg" /> -->
+    <link rel="icon" type="image/png" href="/assets/AT_Logo-6b29b6f3.png" />
+    <link href="/dist/output.css" rel="stylesheet" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tagore | Portfolio</title>
+    <script type="module" crossorigin src="/assets/index-78c6e05c.js"></script>
+    <link rel="stylesheet" href="/assets/index-48916002.css">
+  </head>
+  <body>
+    <div id="root"></div>
+
+    
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        $.ajax({
+          method: "GET",
+          url: "https://api.api-ninjas.com/v1/counter?id=tagore&key=portfolio&hit=true",
+          headers: { "X-Api-Key": "qOmvuqlA32liyBxuo0/FMg==ejYqNWjYX85lGKWF" },
+          contentType: "application/json",
+          success: function (result) {
+            $("#result").text(result);
+          },
+          error: function ajaxError(jqXHR) {
+            console.error("Error:", jqXHR.responseText);
+          },
+        });
+      });
+    </script>
+  </body>
+</html>
